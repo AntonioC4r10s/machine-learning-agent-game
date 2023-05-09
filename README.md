@@ -10,5 +10,5 @@
 - [ ] Objetos: poços (p), Wumpus (W) e ouro (o). Quantidade? 
 - [ ] A partir dos objetos , posicionar no ambiente, também, as percepções geradas por cada um deles.
 - [ ] A casa (0, 0) é a única que não pode ter nenhum objeto, pois é a posição inicial do agente.
-- [ ] Onde houve poço não pode ser posicionado o ouro e o Wumpus. No entanto, estes podem ser posicionados 
+- [ ] Onde houver poço não pode ser posicionado o ouro e o Wumpus. No entanto, estes podem ser posicionados 
 em quaisquer uma das outras casas.
