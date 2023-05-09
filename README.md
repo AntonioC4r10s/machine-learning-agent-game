@@ -1,4 +1,8 @@
 # Projeto "Mundo de Wumpus"
+
+<img src="https://cdna.artstation.com/p/assets/images/images/059/177/696/large/elijah-kuzmichov-wumpus.jpg?1675808223" alt="Wumpus" width="900">
+
+
 (descrição)
 
 ## Etapa 1 - Gerador aleatório de ambientes do "Mundo de Wumpus"
