@@ -12,3 +12,4 @@
 - [x] A casa (0, 0) é a única que não pode ter nenhum objeto, pois é a posição inicial do agente.
 - [x] Onde houver poço não pode ser posicionado o ouro e o Wumpus. No entanto, estes podem ser posicionados 
 em quaisquer uma das outras casas.
+

@@ -40,7 +40,7 @@ class Mapa():
 
         for coordenada in coordenada_vizinhos:
             try:
-                if self.matriz[coordenada[0]][coordenada[1]] != 0 and coordenada[0] and coordenada[1] >= 0:
+                if self.matriz[coordenada[0]][coordenada[1]] != 0 and coordenada[0] >= 0 and coordenada[1] >= 0:
                     vizinhos.append(self.matriz[coordenada[0]][coordenada[1]])
             except:
                 pass
@@ -53,11 +53,13 @@ class Mapa():
         if(casa.count('G')):
             percepcao.append('brilho')
 
-        print(f'coordenada [{x}]x[{y}]')
-        print(f'elementos na casa atual: {casa}')
-        print(f'vizinhos: {vizinhos}')
-        print(f'percepções: {percepcao}')
+        # print(f'coordenada [{x}]x[{y}]')
+        # print(f'elementos na casa atual: {casa}')
+        # print(f'vizinhos: {vizinhos}')
+        # print(f'percepções: {percepcao}')
 
+        return percepcao
+    
     def __str__(self):
         string = ''
         for linha in self.matriz:
@@ -65,8 +67,12 @@ class Mapa():
                 string = string + str(elemento) + ' '
             string = string + '\n'
         return string
+    
+    
+    def posicao_agente(self, x, y):
+        self.matriz[x][y] = 'A'
 
 # altura, largura, num_pocos, num_monstros, num_ouros
-mapa = Mapa(3,3,2,1,1)
-print(mapa)
-mapa.info(1, 0)
+# mapa = Mapa(3,3,2,1,1)
+# print(mapa)
+# mapa.info(1, 0)
