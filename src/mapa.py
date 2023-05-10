@@ -66,7 +66,7 @@ class Mapa():
             string = string + '\n'
         return string
 
-
-mapa = Mapa(8,8,6,4,2)
+# altura, largura, num_pocos, num_monstros, num_ouros
+mapa = Mapa(3,3,2,1,1)
 print(mapa)
 mapa.info(1, 0)
