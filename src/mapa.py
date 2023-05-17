@@ -32,16 +32,28 @@ class Mapa():
 
     def info(self, x, y):
         coordenada_vizinhos = [[x-1, y], [x+1, y], [x, y-1], [x, y+1]]
-        casa = []
+
         vizinhos = []
         percepcao = []
+        caminhos = []
+        casa = []
 
-        casa.append(self.matriz[x][y])
+        try:
+            casa.append(self.matriz[x][y])
+        except:
+            pass
 
         for coordenada in coordenada_vizinhos:
             try:
                 if self.matriz[coordenada[0]][coordenada[1]] != 0 and coordenada[0] >= 0 and coordenada[1] >= 0:
                     vizinhos.append(self.matriz[coordenada[0]][coordenada[1]])
+            except:
+                pass
+
+        for coordenada in coordenada_vizinhos:
+            try:
+                if coordenada[0] >= 0 and coordenada[1] >= 0:
+                    caminhos.append([coordenada[0], coordenada[1]])
             except:
                 pass
 
@@ -58,7 +70,11 @@ class Mapa():
         # print(f'vizinhos: {vizinhos}')
         # print(f'percepções: {percepcao}')
 
-        return percepcao
+        for caminho in caminhos:
+            if caminho[0] >= self.altura or caminho[1] >= self.altura:
+                caminhos.remove(caminho)
+
+        return percepcao, caminhos, casa
     
     def __str__(self):
         string = ''
@@ -71,6 +87,9 @@ class Mapa():
     
     def posicao_agente(self, x, y):
         self.matriz[x][y] = 'A'
+
+    def esvazia(self, x, y):
+        self.matriz[x][y] = 0
 
 # altura, largura, num_pocos, num_monstros, num_ouros
 # mapa = Mapa(3,3,2,1,1)
