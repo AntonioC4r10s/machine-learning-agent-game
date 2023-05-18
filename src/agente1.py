@@ -8,7 +8,7 @@ class Agente():
         self.mapa = mapa
         self.mapa.posicao_agente(self.x, self.y)
         self.percepcoes, self.caminhos, self.casa = mapa.info(self.x, self.y)
-        self.flecha = 1000
+        self.flecha = 1
         
         self.game_over = False
         self.ouro = 0
@@ -56,19 +56,25 @@ class Agente():
     
     def atirar(self):
         # print('tei!')
-        alvos = self.caminhos
-        alvo = random.randint(0, len(alvos) - 1 )
-        alvo = alvos[alvo]
 
-        self.flecha -= 1
-        self.tiros += 1
-
-        # print(self.mapa.matriz[alvo[0]][alvo[1]])
+        if self.flecha <= 0:
+            self.caminha()
         
-        if self.mapa.matriz[alvo[0]][alvo[1]] == ('M'):
-            self.mapa.esvazia(alvo[0], alvo[1])
-            self.percepcoes.remove('fedor')
-            self.matou = True
+        else:
+
+            alvos = self.caminhos
+            alvo = random.randint(0, len(alvos) - 1 )
+            alvo = alvos[alvo]
+
+            self.flecha -= 1
+            self.tiros += 1
+
+            # print(self.mapa.matriz[alvo[0]][alvo[1]])
+            
+            if self.mapa.matriz[alvo[0]][alvo[1]] == ('M'):
+                self.mapa.esvazia(alvo[0], alvo[1])
+                self.percepcoes.remove('fedor')
+                self.matou = True
 
         
     
