@@ -1,16 +1,16 @@
-from mapa import Mapa
+from etapa_2.mapa import Mapa
 from agente1 import Agente
 
 
 agentes = []
 # numero_de_ciclos = int(input('Número de ciclos: '))
-numero_de_ciclos = 1000
+numero_de_ciclos = 10000
 i = 0
 
 while(i < numero_de_ciclos):
 
     # altura, largura, num_pocos, num_monstros, num_ouros
-    mapa = Mapa(4,4,2,1,1)
+    mapa = Mapa(6,6,2,1,1)
     # print(mapa)
     agente = Agente(mapa)
 
@@ -70,4 +70,4 @@ print(f'Mortes em Monstro: {n_capturado}    {n_capturado*100/numero_de_ciclos:.2
 print(f'Coletas de ouro: {n_ouro}    {n_ouro*100/numero_de_ciclos:.2f}%')
 print(f'Passos Totais: {n_passos}    media: {n_passos/numero_de_ciclos:.2f}')
 print(f'Matou? {n_matou}    media: {n_matou*100/numero_de_ciclos:.2f}%')
-print(f'Tiros {n_tiros}    media: {n_tiros*100/numero_de_ciclos:.2f}')
+print(f'Tiros {n_tiros}    media: {n_tiros/numero_de_ciclos:.2f}')
