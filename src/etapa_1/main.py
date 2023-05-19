@@ -1,4 +1,4 @@
-from etapa_2.mapa import Mapa
+from mapa import Mapa
 from agente1 import Agente
 
 

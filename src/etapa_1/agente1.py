@@ -1,4 +1,4 @@
-from etapa_2.mapa import Mapa
+from mapa import Mapa
 import random
 
 class Agente():
