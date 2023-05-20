@@ -1,16 +1,16 @@
 from mapa import Mapa
-from agente1 import Agente
+from agente2 import Agente
 
 
 agentes = []
 # numero_de_ciclos = int(input('Número de ciclos: '))
-numero_de_ciclos = 10000
+numero_de_ciclos = 10000 
 i = 0
 
 while(i < numero_de_ciclos):
 
     # altura, largura, num_pocos, num_monstros, num_ouros
-    mapa = Mapa(6,6,2,1,1)
+    mapa = Mapa(4,4,2,1,1)
     # print(mapa)
     agente = Agente(mapa)
 

@@ -1,7 +1,7 @@
 from mapa import Mapa
 import random
 
-class Agente():
+class Agente(): 
     def __init__(self, mapa:Mapa):
         self.x = 0
         self.y = 0
