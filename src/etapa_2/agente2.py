@@ -50,7 +50,7 @@ class Agente():
             if casa in proximos:
                 conhecidos.append(casa)
 
-        # print('conhecidos: ', conhecidos)
+        # print('conhecidos: ', conhecidos) 
         coragem = random.randint(1, 10)
 
         if coragem >= self.medo or conhecidos == []:
