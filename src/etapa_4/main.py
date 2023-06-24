@@ -5,8 +5,8 @@ from agente import agente, imprimir_individuos, media_de_pontos_da_geracao
 from myag import myAG
 
 # Definindo as propriedades do mundo e as imprimindo
-altura = 4
-largura = 4
+altura = 5
+largura = 5
 pocos = 2
 wumpus = 1
 ouros = 1
@@ -31,9 +31,9 @@ while(True):
 print(mapa)
 
 
-myAG(tam_geracao=15, 
+myAG(tam_geracao=50, 
      tam_sequencia=10, 
-     num_de_geracoes=50, 
+     num_de_geracoes=20, 
      mapa=mapa,
      ploting=True,
      text=True)
