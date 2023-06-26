@@ -14,3 +14,9 @@ This project aims to fulfill the steps proposed in the discipline of Computation
 - [x] A casa (0, 0) é a única que não pode ter nenhum objeto, pois é a posição inicial do agente.
 - [x] Onde houver poço não pode ser posicionado o ouro e o Wumpus. No entanto, estes podem ser posicionados 
 em quaisquer uma das outras casas.
+
+## Etapa 2 - Agente Reativo (versão 1)
+- [x] O comportamento do agente é definido a partir de seu conjuntos de regras:
+      Se <percepções> então <ação>
+- [x] Este conjunto de regras (ou base de conhecimento) deve ser especificado por meio de uma tabela.
+- [x] A partir da especificação, o próximo passo é codificar o agente e integrar o 'gerador aleatório de ambientes', de forma a possibilitar a realização de testes de validação para posterior avaliação de peformance.
