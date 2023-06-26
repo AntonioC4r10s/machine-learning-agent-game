@@ -26,7 +26,7 @@ em quaisquer uma das outras casas.
 - [x] Mecanismo mais inteligente para escolha da regra a ser aplicada, em caso de duas ou mais possíveis de serem utilizadas em determinado instante. Na primeira versão foi utilizada a Estratégia Aleatória. Logo, há liberdade para definir a melhor estratégia para essa finalidade.
 - [x] Além disso, uso do conhecimento registrado na memória para auxiliar o processo de escolha da regra a ser aplicada (Inferência? Planejamento?).
 
-## Etapa4 - Agente de Aprendizagem
+## Etapa 4 - Agente de Aprendizagem
 - [x] O mecanismo utilizado para a aprendizagem do Agente do Mundo de Wumpus deve ser idealizado e projetado via Algoritmos Genéticos para, posteriormente, ser codificado;
 - [x] Cada componente ou processo do Algoritmo Genético deverá ser projetado com o foco na resolução do problema de “sair da casa (0,0), pegar o ouro e voltar à casa (0,0)';
 - [x] Além do caminhando, deverão ser considerados os poços, ouro e wumpus (até o momento, temos um gerador aleatório de ambientes com dimensão n > 3);
