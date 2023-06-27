@@ -156,8 +156,8 @@ def myAG(tam_geracao, tam_sequencia, num_de_geracoes, mapa: Mapa, ploting: bool,
         # Criar a primeira figura e o gráfico de linha
         fig1 = plt.figure()
         plt.plot(x1, y1)
-        plt.xlabel('Pontuação')
-        plt.ylabel('Geração')
+        plt.ylabel('Pontuação')
+        plt.xlabel('Geração')
         plt.title('Potuação do melhor indivíduo em cada geração')
 
         x2 = np.arange(0, len(media_de_pontos_por_geracao))
@@ -166,8 +166,8 @@ def myAG(tam_geracao, tam_sequencia, num_de_geracoes, mapa: Mapa, ploting: bool,
         # Criar a primeira figura e o gráfico de linha
         fig2 = plt.figure()
         plt.plot(x2, y2)
-        plt.xlabel('Pontuação')
-        plt.ylabel('Geração')
+        plt.ylabel('Pontuação')
+        plt.xlabel('Geração')
         plt.title('Potuação média em cada geração')
 
         # Exibir as duas figuras
