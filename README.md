@@ -44,7 +44,7 @@ Ou seja, é gerada a matriz e é exibida as suas caractristicas e a representaç
 
 <div style="text-align: justify;">
 Nesta etapa, foi criado o agente reativo, onde o mesmo deveria percorrer o mapa definido na etapa 1 e conforme as percepções que o mesmo recebia, o seu comportamento é influênciado dentro do jogo. Foi criado então a estrutura denominada Agente(), onde é passado como argumento o Mapa() criado anteriormente, com isso, temos a vinculação dos objetos principais do game, tanto o mapa, onde estarão todos os elementos posicionados para a interação, e o agente, que será o sujeito do cenário proposto.<br><br>
-Após isso, foi inserido ao Mapa uma função de retornar as percepçoes conforme solicitado pelo agente, ou seja, quando o agente estivesse em qualquer casa, ele simplesmente pode fazer uma requisição informando o seu local (x, y) para o mapa, e então o mesmo retornará as percepções decorrentes de cada casa na matriz, sem informar o elemento (ouro, poço, etc.) nas casas vizinhas.<br><br>
+Após isso, foi inserido ao Mapa uma função de retornar as percepçoes conforme solicitado pelo agente, ou seja, quando o agente estiver em qualquer casa, ele simplesmente pode fazer uma requisição informando o seu local (x, y) para o mapa, e então o mesmo retornará as percepções decorrentes de cada casa na matriz, sem informar o elemento (ouro, poço, etc.) nas casas vizinhas.<br><br>
 Ao receber as percepções, o agente escolhe entre as ações possíveis (andar, pegar, atirar) e toma a decisão para cada casa do mapa, o algoritmo permanece até o mesmo cair em um poço ou ser capturado pelo Wumpus. As ações foram escritas em forma de ifs, onde primeiramente prioriza o ouro, se não houver ouro na casa (percepção de brilho) ele toma outras decisões.<br><br>
 Ao executar o main da etapa é gerado os dados gerais conforme o número de individuos gerados. Por padrão foi adotado 10.000 agentes, onde é retornado como exemplo as seguintes informações:
 <div>
@@ -61,7 +61,7 @@ Ao executar o main da etapa é gerado os dados gerais conforme o número de indi
 - [x] Além disso, uso do conhecimento registrado na memória para auxiliar o processo de escolha da regra a ser aplicada (Inferência? Planejamento?).
 
 <div style="text-align: justify;">
-Nesta etapa, foi feito um update em relação a etapa anterior, onde foi inserida uma lista como forma de memória, ou seja, todas as casas na qual o agente passar, ele irá armazenar a localização na memória, assim, ao precisar passar novamente por esta casa o agente á sabe que esta será uma localização de segurança.<br><br>
+Nesta etapa, foi feito um update em relação a etapa anterior, onde foi inserida uma lista como forma de memória, ou seja, todas as casas na qual o agente passar, ele irá armazenar a localização na memória, assim, ao precisar passar novamente por esta casa o agente saberá que esta é uma localização de segurança.<br><br>
 Durante a sua jornada, o agente pode chegar em um local onde ele define se irá por um caminho desconhecido ou conhecido, para isso foi implementado o atributo medo, este atributo pode ir de 1 a 10, quanto maior for o medo, mais o agente será cauteloso para com as casa desconhecidas, ou seja, irá preferir uma casa conhecida. Por padrão, esatbelecemos o medo do agente em 7, com isso ele será cauteloso, porém não deixará de descobrir novos caminhos sempre que achar necessário.<br><br>
 Quando o main da etapa 3 é executado, gera dados como no exemplo a seguir:
 <div>
