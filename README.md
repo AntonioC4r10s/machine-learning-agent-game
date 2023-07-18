@@ -87,7 +87,16 @@ Quando o main da etapa 3 é executado, gera dados como no exemplo a seguir:
 * ploting - opção para gerar gráficos 
 * text - opção para gerar textos (relatórios do que está acontecendo)
 
+Com isso a função seguirá o seguinte algoritmo:
+<p align="center">
+<img src="src/etapa_4/img/screen.jpg" alt="Algoritmo etapa 4" width="300" style="filter: invert(1);">
+</p>
 
+Foi utilizado o operador genético de um ponto de corte:
+
+<p align="center">
+<img src="https://sites.icmc.usp.br/andre/research/genetic/image/cross_an.gif" alt="Algoritmo etapa 4" width="300">
+</p>
 
 
 
