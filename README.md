@@ -1,6 +1,6 @@
 # Projeto "Mundo de Wumpus"
 
-<img src="https://cdna.artstation.com/p/assets/images/images/059/177/696/large/elijah-kuzmichov-wumpus.jpg?1675808223" alt="Wumpus" width="900">
+<!--<img src="https://cdna.artstation.com/p/assets/images/images/059/177/696/large/elijah-kuzmichov-wumpus.jpg?1675808223" alt="Wumpus" width="900"> -->
 
 
 <div style="text-align: justify;">
@@ -36,13 +36,17 @@ A partir destas definições, foram criadas funções internas na classe onde fo
 
 Ou seja, é gerada a matriz e é exibida as suas caractristicas e a representação da mesma ao usuário.
 
-
-
 ## Etapa 2 - Agente Reativo (versão 1)
 - [x] O comportamento do agente é definido a partir de seu conjuntos de regras:
       Se <percepções> então <ação>
 - [x] Este conjunto de regras (ou base de conhecimento) deve ser especificado por meio de uma tabela.
 - [x] A partir da especificação, o próximo passo é codificar o agente e integrar o 'gerador aleatório de ambientes', de forma a possibilitar a realização de testes de validação para posterior avaliação de peformance.
+
+<div style="text-align: justify;">
+Nesta etapa, foi criado o agente reativo, onde o mesmo deveria percorrer o mapa definido na etapa 1 e conforme as percepções que o mesmo recebia, o seu comportamento é influênciado dentro do jogo. Foi criado então a estrutura denominada Agente(), onde é passado como argumento o Mapa() criado anteriormente, com isso, temos a vinculação dos objetos principais do game, tanto o mapa, onde estarão todos os elementos posicionados para a interação, e o agente, que será o sujeito do cenário proposto.<br><br>
+Após isso, foi inserido ao Mapa uma função de retornar as percepçoes conforme solicitado pelo agente, ou seja, quando o agente estivesse em qualquer casa, ele simplesmente pode fazer uma requisição informando o seu local (x, y) para o mapa, e então o mesmo retornará as percepções decorrentes de cada casa na matriz, sem informar o elemento (ouro, poço, etc.) nas casas vizinhas.<br><br>
+Ao receber as percepções, o agente escolhe entre as ações possíveis (andar, pegar, atirar) e toma a decisão para cada casa do mapa, o algoritmo permanece até o mesmo cair em um poço ou ser capturado pelo Wumpus. As ações foram escritas em forma de ifs, onde primeiramente prioriza o ouro, se não houver ouro na casa (percepção de brilho) ele toma outras decisões.
+<div>
 
 ## Etapa 3 - Agente Reativo (versão 2)
 - [x] Estrutura de memória, que pode ser: uma lista; uma matriz - réplica do ambiente, com anotações feitas pelo agente; ou, outra estrutura de dados definida como mais adequada pela equipe.
