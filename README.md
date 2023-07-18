@@ -60,6 +60,20 @@ Ao executar o main da etapa é gerado os dados gerais conforme o número de indi
 - [x] Mecanismo mais inteligente para escolha da regra a ser aplicada, em caso de duas ou mais possíveis de serem utilizadas em determinado instante. Na primeira versão foi utilizada a Estratégia Aleatória. Logo, há liberdade para definir a melhor estratégia para essa finalidade.
 - [x] Além disso, uso do conhecimento registrado na memória para auxiliar o processo de escolha da regra a ser aplicada (Inferência? Planejamento?).
 
+<div style="text-align: justify;">
+Nesta etapa, foi feito um update em relação a etapa anterior, onde foi inserida uma lista como forma de memória, ou seja, todas as casas na qual o agente passar, ele irá armazenar a localização na memória, assim, ao precisar passar novamente por esta casa o agente á sabe que esta será uma localização de segurança.<br><br>
+Durante a sua jornada, o agente pode chegar em um local onde ele define se irá por um caminho desconhecido ou conhecido, para isso foi implementado o atributo medo, este atributo pode ir de 1 a 10, quanto maior for o medo, mais o agente será cauteloso para com as casa desconhecidas, ou seja, irá preferir uma casa conhecida. Por padrão, esatbelecemos o medo do agente em 7, com isso ele será cauteloso, porém não deixará de descobrir novos caminhos sempre que achar necessário.<br><br>
+Quando o main da etapa 3 é executado, gera dados como no exemplo a seguir:
+<div>
+<br>
+<p align="center">
+<img src="src/etapa_3/img/print_etapa_3.jpg" alt="Exemplo para a etapa 3" width="310">
+</p>
+<div style="text-align: justify;">Ou seja, são geradas e exibidas as informações totais sobre os agentes, podendo então determinar e avaliar o comportamento na qual tende o algoritmo criado.
+<div>
+
+
+
 ## Etapa 4 - Agente de Aprendizagem
 - [x] O mecanismo utilizado para a aprendizagem do Agente do Mundo de Wumpus deve ser idealizado e projetado via Algoritmos Genéticos para, posteriormente, ser codificado;
 - [x] Cada componente ou processo do Algoritmo Genético deverá ser projetado com o foco na resolução do problema de “sair da casa (0,0), pegar o ouro e voltar à casa (0,0)';
