@@ -72,10 +72,22 @@ Quando o main da etapa 3 é executado, gera dados como no exemplo a seguir:
 <div style="text-align: justify;">Ou seja, são geradas e exibidas as informações totais sobre os agentes, podendo então determinar e avaliar o comportamento na qual tende o algoritmo criado.
 <div>
 
-
-
 ## Etapa 4 - Agente de Aprendizagem
 - [x] O mecanismo utilizado para a aprendizagem do Agente do Mundo de Wumpus deve ser idealizado e projetado via Algoritmos Genéticos para, posteriormente, ser codificado;
 - [x] Cada componente ou processo do Algoritmo Genético deverá ser projetado com o foco na resolução do problema de “sair da casa (0,0), pegar o ouro e voltar à casa (0,0)';
 - [x] Além do caminhando, deverão ser considerados os poços, ouro e wumpus (até o momento, temos um gerador aleatório de ambientes com dimensão n > 3);
+
+<div style="text-align: justify;">Nesta última etapa, o agente terá o comportamento formado a partir de algoritimos genéticos (AGs), para isso, foi planejado uma função que gerência toda a parte do AG utilizado nesta estapa. A função myAG() recebe como argumento os seguintes atributos:
+<div>
+
+* tamanho da geracao 
+* tamanho da sequencia máxima de movimentos 
+* número de geracao 
+* Mapa - refente a etapa 1 
+* ploting - opção para gerar gráficos 
+* text - opção para gerar textos (relatórios do que está acontecendo)
+
+
+
+
 
