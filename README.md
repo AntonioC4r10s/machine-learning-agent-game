@@ -4,7 +4,7 @@
 
 
 <div style="text-align: justify;">
-Este projeto tem como objetivo cumprir as etapas proposta na disciplina de Intetligẽncia Computacional e Intetligência Artificial, onde artavés da idéia do Mundo de Wumpus é abordada algumas métodos para a resolução do problema determinado pelo jogo. Abaixo temos a descrição de cada umas das etapas.<br><br>
+Este projeto tem como objetivo cumprir as etapas proposta na disciplina de Inteligência Computacional e Inteligência Artificial, onde artavés da idéia do Mundo de Wumpus é abordada algumas métodos para a resolução do problema determinado pelo jogo. Abaixo temos a descrição de cada umas das etapas.<br><br>
 This project aims to fulfill the steps proposed in the discipline of Computational Intelligence and Artificial Intelligence, where through the idea of the World of Wumpus some methods for solving the problem determined by the game are approached. Below is a description of each of the steps.
 </div>
 
@@ -52,7 +52,8 @@ Ao executar o main da etapa é gerado os dados gerais conforme o número de indi
 <p align="center">
 <img src="src/etapa_2/img/etapa_2_print.jpg" alt="Exemplo para a etapa 2" width="310">
 </p>
-
+<div style="text-align: justify;">Ou seja, são geradas e exibidas as informações totais sobre os agentes, podendo então determinar e avaliar o comportamento na qual tende o algoritmo criado.
+<div>
 
 ## Etapa 3 - Agente Reativo (versão 2)
 - [x] Estrutura de memória, que pode ser: uma lista; uma matriz - réplica do ambiente, com anotações feitas pelo agente; ou, outra estrutura de dados definida como mais adequada pela equipe.
