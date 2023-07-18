@@ -7,7 +7,8 @@ from fitness import fitness_func, fitness_func_2
 
 def primeira_geracao(num_invividuos, tam_individuo_max):
     
-    movimentos = ['u', 'd', 'l', 'r']
+    # movimentos = ['u', 'd', 'l', 'r']
+    movimentos = ['u', 'd', 'l', 'r', 'g']
     geracao = []
 
     for i in range(0, num_invividuos):
@@ -22,7 +23,7 @@ def avaliacao(geracao: list[agente], mapa: Mapa):
 
     for individuo in geracao:
         # pontos = fitness_func(individuo.sequencia, mapa)
-        pontos = fitness_func(individuo.sequencia, mapa)
+        pontos = fitness_func_2(individuo.sequencia, mapa)
         individuo.pontos = pontos
     
     ranked = sorted(geracao, key=lambda x: x.pontos, reverse=True)
