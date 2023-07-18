@@ -117,7 +117,7 @@ Após, foi implementada as ações pegar o ouro de forma não automática e de v
   <img src="src/etapa_4/img/Figure_4.png" alt="Imagem 2" width="420">
 </div>
 
-Com isso foi ppossível chegar a um resultado satisfatório a princípio, contudo, para indices de acertividade mais elevados talvez seja melhor apropriado outros tipo de operadores genéticos em possíveis atualizações, tendo em vista que muitas (na maior parte das vezes) o algoritmo fica travado na execução.
+Com isso foi possível chegar a um resultado satisfatório a princípio, contudo, para indices de acertividade mais elevados talvez seja melhor apropriado outros tipo de operadores genéticos em possíveis atualizações, tendo em vista que muitas (na maior parte das vezes) o algoritmo fica travado na execução.
 
 
 
