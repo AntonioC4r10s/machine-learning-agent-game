@@ -3,7 +3,7 @@
 <img src="https://cdna.artstation.com/p/assets/images/images/059/177/696/large/elijah-kuzmichov-wumpus.jpg?1675808223" alt="Wumpus" width="900">
 
 
-Este projeto tem como objetivo cumprir as etapas proposta na disciplina de Intetligẽncia Computacional e Intetligẽncia Artificial, onde artavés da idéia do Mundo de Wumpus é abordada algumas métodos para a resolução do problema determinado pelo jogo. Abaixo temos a descrição de cada umas das etapas.  
+Este projeto tem como objetivo cumprir as etapas proposta na disciplina de Intetligẽncia Computacional e Intetligência Artificial, onde artavés da idéia do Mundo de Wumpus é abordada algumas métodos para a resolução do problema determinado pelo jogo. Abaixo temos a descrição de cada umas das etapas.  
 
 This project aims to fulfill the steps proposed in the discipline of Computational Intelligence and Artificial Intelligence, where through the idea of the World of Wumpus some methods for solving the problem determined by the game are approached. Below is a description of each of the steps.
 
@@ -14,6 +14,23 @@ This project aims to fulfill the steps proposed in the discipline of Computation
 - [x] A casa (0, 0) é a única que não pode ter nenhum objeto, pois é a posição inicial do agente.
 - [x] Onde houver poço não pode ser posicionado o ouro e o Wumpus. No entanto, estes podem ser posicionados 
 em quaisquer uma das outras casas.
+
+Nesta etapa, primeiramente foi criado uma estrutura (Classe) denominada Mapa(), onde servirá como base para a contrução de um mapa para o mundo de wumpus nas demais etapas, foram definidos os seguintes atributos para a geração de uma matriz em um mapa:
+* altura 
+* largura 
+* número de poços 
+* número de monstros 
+* número de ouros
+
+A partir destas definições, foram criadas funções internas na classe onde foi possível definir que a cada vez que for chamado o método de crição (__init__) do método, será criado uma matriz AxL aleatória com o número pré-definido de elementos referentes ao game. Ao executar o main desta etapa, teremos por exemplo o seguinte resultado:
+
+<p align="center">
+<img src="src/etapa_1/img/print_exemplo_2.jpg" alt="Exemplo para a etapa 1" width="160">
+</p>
+
+Ou seja, é gerada a matriz e é exibida as suas caractristicas e a representação da mesma ao usuário.
+
+
 
 ## Etapa 2 - Agente Reativo (versão 1)
 - [x] O comportamento do agente é definido a partir de seu conjuntos de regras:
