@@ -45,8 +45,14 @@ Ou seja, é gerada a matriz e é exibida as suas caractristicas e a representaç
 <div style="text-align: justify;">
 Nesta etapa, foi criado o agente reativo, onde o mesmo deveria percorrer o mapa definido na etapa 1 e conforme as percepções que o mesmo recebia, o seu comportamento é influênciado dentro do jogo. Foi criado então a estrutura denominada Agente(), onde é passado como argumento o Mapa() criado anteriormente, com isso, temos a vinculação dos objetos principais do game, tanto o mapa, onde estarão todos os elementos posicionados para a interação, e o agente, que será o sujeito do cenário proposto.<br><br>
 Após isso, foi inserido ao Mapa uma função de retornar as percepçoes conforme solicitado pelo agente, ou seja, quando o agente estivesse em qualquer casa, ele simplesmente pode fazer uma requisição informando o seu local (x, y) para o mapa, e então o mesmo retornará as percepções decorrentes de cada casa na matriz, sem informar o elemento (ouro, poço, etc.) nas casas vizinhas.<br><br>
-Ao receber as percepções, o agente escolhe entre as ações possíveis (andar, pegar, atirar) e toma a decisão para cada casa do mapa, o algoritmo permanece até o mesmo cair em um poço ou ser capturado pelo Wumpus. As ações foram escritas em forma de ifs, onde primeiramente prioriza o ouro, se não houver ouro na casa (percepção de brilho) ele toma outras decisões.
+Ao receber as percepções, o agente escolhe entre as ações possíveis (andar, pegar, atirar) e toma a decisão para cada casa do mapa, o algoritmo permanece até o mesmo cair em um poço ou ser capturado pelo Wumpus. As ações foram escritas em forma de ifs, onde primeiramente prioriza o ouro, se não houver ouro na casa (percepção de brilho) ele toma outras decisões.<br><br>
+Ao executar o main da etapa é gerado os dados gerais conforme o número de individuos gerados. Por padrão foi adotado 10.000 agentes, onde é retornado como exemplo as seguintes informações:
 <div>
+<br>      
+<p align="center">
+<img src="src/etapa_2/img/etapa_2_print.jpg" alt="Exemplo para a etapa 2" width="310">
+</p>
+
 
 ## Etapa 3 - Agente Reativo (versão 2)
 - [x] Estrutura de memória, que pode ser: uma lista; uma matriz - réplica do ambiente, com anotações feitas pelo agente; ou, outra estrutura de dados definida como mais adequada pela equipe.
