@@ -1,6 +1,6 @@
 # Projeto "Mundo de Wumpus"
 
-<!--<img src="https://cdna.artstation.com/p/assets/images/images/059/177/696/large/elijah-kuzmichov-wumpus.jpg?1675808223" alt="Wumpus" width="900"> -->
+<img src="https://cdna.artstation.com/p/assets/images/images/059/177/696/large/elijah-kuzmichov-wumpus.jpg?1675808223" alt="Wumpus" width="900">
 
 
 <div style="text-align: justify;">
@@ -97,6 +97,30 @@ Foi utilizado o operador genético de um ponto de corte:
 <p align="center">
 <img src="https://sites.icmc.usp.br/andre/research/genetic/image/cross_an.gif" alt="Algoritmo etapa 4" width="300">
 </p>
+
+<div style="text-align: justify;">
+Por fim foram criadas duas funções de avaliação.<br>
+Na primeira foi implementado apenas o objetivo de andar dentro do mapa, onde toda vez que o agente saia era penalizado e quando encontrava o wumpus ou um poço ele era eliminado, com isso foi possível obter resultados conforme o exemplo abaixo:
+<div>
+<br>
+
+<div style="display: flex;">
+  <img src="src/etapa_4/img/Figure_1.png" alt="Imagem 1" width="420">
+  <img src="src/etapa_4/img/Figure_2.png" alt="Imagem 2" width="420">
+</div>
+
+<div style="text-align: justify;">
+Após, foi implementada as ações pegar o ouro de forma não automática e de volta para a casa (0, 0). Onde era dada penalidade a cada movimento invalido e pontuação acrescida para o movimento válido. O exemplo a seguir apresenta a saída de um desses exemplos:<div>
+<br>
+<div style="display: flex;">
+  <img src="src/etapa_4/img/Figure_3.png" alt="Imagem 1" width="420">
+  <img src="src/etapa_4/img/Figure_4.png" alt="Imagem 2" width="420">
+</div>
+
+Com isso foi ppossível chegar a um resultado satisfatório a princípio, contudo, para indices de acertividade mais elevados talvez seja melhor apropriado outros tipo de operadores genéticos em possíveis atualizações, tendo em vista que muitas (na maior parte das vezes) o algoritmo fica travado na execução.
+
+
+
 
 
 
