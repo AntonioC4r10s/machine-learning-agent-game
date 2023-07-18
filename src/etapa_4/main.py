@@ -29,9 +29,9 @@ while(True):
 
 print(mapa)
 
-myAG(tam_geracao=50, 
-     tam_sequencia=10, 
-     num_de_geracoes=20, 
+myAG(tam_geracao=100, 
+     tam_sequencia_MAX=40, 
+     num_de_geracoes=50, 
      mapa=mapa,
      ploting=True,
      text=True)

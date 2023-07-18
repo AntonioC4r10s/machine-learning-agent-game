@@ -3,74 +3,16 @@ import random
 from mapa import Mapa
 import matplotlib.pyplot as plt
 import numpy as np
+from fitness import fitness_func, fitness_func_2
 
-def fitness_func(solution, mapa:Mapa):
-
-    world = mapa
-
-
-    actions = ['u', 'd', 'l', 'r']
-    # Posição inicial do agente
-    start_position = (0, 0)
-
-    # Pontuação inicial
-    score = 0
-    pegou_ouro = False
-
-    # Executar as ações sequencialmente
-    for action in solution:
-        # Calcular a próxima posição com base na ação
-        if action == 'u':
-            next_position = (start_position[0] - 1, start_position[1])
-        elif action == 'd':
-            next_position = (start_position[0] + 1, start_position[1])
-        elif action == 'l':
-            next_position = (start_position[0], start_position[1] - 1)
-        elif action == 'r':
-            next_position = (start_position[0], start_position[1] + 1)
-
-        # Verificar se a próxima posição é válida
-        if next_position[0] < 0 or next_position[0] >= world.altura or next_position[1] < 0 or next_position[1] >= world.altura:
-            # Movimento inválido, penalizar pontuação
-            score -= 10
-        
-        else:
-            # Atualizar posição atual
-            start_position = next_position
-            # score += 5
-
-            # if start_position[0] == 0 and start_position[1] == 0 and pegou_ouro == True:
-            #     score += 1000 
-
-            # Verificar as percepções do agente
-            cell = world.matriz[start_position[0]][start_position[1]]
-            if cell == 'G':
-                # Agente encontrou o ouro, recompensar pontuação
-                score += 100
-                # world.matriz[start_position[0]][start_position[1]] = 0
-                break
-                
-            elif cell == 'M':
-                # Agente encontrou o Wumpus, penalizar pontuação e terminar
-                score -= 100
-                break
-            elif cell == 'P':
-                # Agente encontrou um buraco, penalizar pontuação
-                score -= 50
-
-    return score
-
-# Definir o espaço de busca (range) para as variáveis
-# var_range = np.array([['u', 'd', 'l', 'r']] * 10)  # Sequência de 10 ações
-
-
-def primeira_geracao(num_invividuos, tam_individuo):
+def primeira_geracao(num_invividuos, tam_individuo_max):
     
     movimentos = ['u', 'd', 'l', 'r']
     geracao = []
 
     for i in range(0, num_invividuos):
         individuo = agente(i)
+        tam_individuo = random.randint(1, tam_individuo_max)
         individuo.sequencia = ''.join(random.choice(movimentos) for _ in range(tam_individuo))
         geracao.append(individuo)
     return geracao
@@ -79,6 +21,7 @@ def avaliacao(geracao: list[agente], mapa: Mapa):
     pontuacao = []
 
     for individuo in geracao:
+        # pontos = fitness_func(individuo.sequencia, mapa)
         pontos = fitness_func(individuo.sequencia, mapa)
         individuo.pontos = pontos
     
@@ -116,12 +59,12 @@ def recombinacao(geracao: list[agente]):
     return geracao
 
 
-def myAG(tam_geracao, tam_sequencia, num_de_geracoes, mapa: Mapa, ploting: bool, text: bool):
+def myAG(tam_geracao, tam_sequencia_MAX, num_de_geracoes, mapa: Mapa, ploting: bool, text: bool):
     
     melhores_de_cada_geracao = []
     media_de_pontos_por_geracao = []
 
-    lista_de_agentes = primeira_geracao(num_invividuos=tam_geracao, tam_individuo=tam_sequencia)
+    lista_de_agentes = primeira_geracao(num_invividuos=tam_geracao, tam_individuo_max=tam_sequencia_MAX)
     lista_de_agentes = avaliacao(lista_de_agentes, mapa)
     media_de_pontos_por_geracao.append(media_de_pontos_da_geracao(lista_de_agentes))
 
