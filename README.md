@@ -105,16 +105,16 @@ Na primeira foi implementado apenas o objetivo de andar dentro do mapa, onde tod
 <br>
 
 <div style="display: flex;">
-  <img src="src/etapa_4/img/Figure_1.png" alt="Imagem 1" width="420">
-  <img src="src/etapa_4/img/Figure_2.png" alt="Imagem 2" width="420">
+  <img src="src/etapa_4/img/Figure_1.png" alt="Imagem 1" width="400">
+  <img src="src/etapa_4/img/Figure_2.png" alt="Imagem 2" width="400">
 </div>
 
 <div style="text-align: justify;">
 Após, foi implementada as ações pegar o ouro de forma não automática e de volta para a casa (0, 0). Onde era dada penalidade a cada movimento invalido e pontuação acrescida para o movimento válido. O exemplo a seguir apresenta a saída de um desses exemplos:<div>
 <br>
 <div style="display: flex;">
-  <img src="src/etapa_4/img/Figure_3.png" alt="Imagem 1" width="420">
-  <img src="src/etapa_4/img/Figure_4.png" alt="Imagem 2" width="420">
+  <img src="src/etapa_4/img/Figure_3.png" alt="Imagem 1" width="400">
+  <img src="src/etapa_4/img/Figure_4.png" alt="Imagem 2" width="400">
 </div>
 
 Com isso foi possível chegar a um resultado satisfatório a princípio, contudo, para indices de acertividade mais elevados talvez seja melhor apropriado outros tipo de operadores genéticos em possíveis atualizações, tendo em vista que muitas (na maior parte das vezes) o algoritmo fica travado na execução.
