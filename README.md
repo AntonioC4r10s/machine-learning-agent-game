@@ -27,7 +27,7 @@ Nesta etapa, primeiramente foi criado uma estrutura (Classe) denominada Mapa(), 
 * número de ouros
 
 <div style="text-align: justify;">
-A partir destas definições, foram criadas funções internas na classe onde foi possível definir que a cada vez que for chamado o método de crição (__init__) do método, será criado uma matriz AxL aleatória com o número pré-definido de elementos referentes ao game. Ao executar o main desta etapa, teremos por exemplo o seguinte resultado:
+A partir destas definições, foram criadas funções internas na classe onde foi possível definir que a cada vez que for chamado o método de criação (__init__) da classe, será criada uma matriz AxL aleatória com o número pré-definido de elementos referentes ao game. Ao executar o main desta etapa, teremos por exemplo o seguinte resultado:
 <div>
 <br>
 <p align="center">
