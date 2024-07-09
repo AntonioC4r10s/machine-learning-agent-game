@@ -4,7 +4,7 @@
 
 
 <div style="text-align: justify;">
-Este projeto tem como objetivo cumprir etapas  de Inteligência Computacional e Inteligência Artificial, onde artavés da idéia do Mundo de Wumpus é abordada algums métodos para a resolução do problema determinado pelo jogo. Abaixo temos a descrição de cada umas das etapas.<br><br>
+Este projeto tem como objetivo cumprir etapas de construção de Inteligência Computacional e Inteligência Artificial, onde artavés da idéia do Mundo de Wumpus é abordada algums métodos para a resolução do problema determinado pelo jogo. Abaixo temos a descrição de cada umas das etapas.<br><br>
 This project aims to fulfill the steps proposed in the discipline of Computational Intelligence and Artificial Intelligence, where through the idea of the World of Wumpus some methods for solving the problem determined by the game are approached. Below is a description of each of the steps.
 </div>
 
